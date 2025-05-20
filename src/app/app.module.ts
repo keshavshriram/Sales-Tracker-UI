@@ -14,8 +14,6 @@ import { AboutComponent } from './features/about/about.component';
   declarations: [
   
     DashboardComponent,
-       AddRecordComponent,
-       FormManagementComponent,
        AboutComponent
   ],
   imports: [
