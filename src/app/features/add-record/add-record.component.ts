@@ -5,25 +5,38 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { AddRecord } from 'src/app/shared/Models/AddRecord';
 
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-add-record',
   templateUrl: './add-record.component.html',
   styleUrls: ['./add-record.component.scss'],
   standalone: true,
-  imports:[MatFormFieldModule,MatSelectModule,MatInputModule,FormsModule, ReactiveFormsModule]
+  imports:[MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatIconModule,
+    CommonModule]
 })
 export class AddRecordComponent implements OnInit {
   record : AddRecord = new AddRecord(0, 0, 0, 0, 0, '', '', 0, '');
   form : FormGroup = new FormGroup({}) ; 
   constructor(private readonly fB : FormBuilder) { 
     this.form = this.fB.group({
-      item_Name : ['',Validators.required],
-      buy_qty : [0,Validators.required],
-      buy_rate : [0,Validators.required],
+      entryType : ['',Validators.required],
+      item : ['',Validators.required],
+      purchaseQty : [0,Validators.required],
+      totalPrice : [0,Validators.required],
       unit : ['',Validators.required],
-      sell_qty : [],
-      sell_rate : [],
-      carry_forward : []
+      sellQty : [],
+      sellRate : [],
+      carryForward : []
       
 
     })
