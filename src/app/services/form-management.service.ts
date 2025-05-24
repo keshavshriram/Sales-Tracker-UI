@@ -27,4 +27,10 @@ export class FormManagementService {
     const url = this.sharedService.config.getConfigUrl("applicationApiUrl") + this.sharedService.config.getConfigApiEndPoints("UpdateProduct") ; 
     return this.http.post(url , record);
   }
+
+  deleteRecord(record : any):Observable<any>
+  {
+    const url = this.sharedService.config.getConfigUrl("applicationApiUrl") + this.sharedService.config.getConfigApiEndPoints("RemoveProduct") ; 
+    return this.http.post(url , record);
+  }
 }

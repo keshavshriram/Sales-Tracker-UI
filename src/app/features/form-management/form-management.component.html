@@ -33,8 +33,14 @@
                   <mat-icon>more_horiz</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu">
-                  <button mat-menu-item (click)="editRecord(element)">Edit</button>
-                  <button mat-menu-item>Item 2</button>
+                  <button mat-menu-item (click)="editRecord(element)">
+                    <mat-icon class="!text-[#dddddd]">edit</mat-icon>
+                    <span>Edit</span>
+                  </button>
+                  <button mat-menu-item>
+                    <mat-icon class="!text-[#dddddd]">delete</mat-icon>
+                    <span (click)="deleteRecord(element)">Delete</span>
+                  </button>
                 </mat-menu>
               </ng-container>
             </td>

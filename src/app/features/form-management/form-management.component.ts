@@ -98,6 +98,18 @@ export class FormManagementComponent implements OnInit{
     });
   }
 
+  deleteRecord(element: any) {
+    // Calling API to delete the record
+    this.formManagementService.deleteRecord(element).subscribe({
+      next: () => {
+        this.apiCallForData(this.selectedField );
+      },
+      error: () => {
+        // Handle error if needed
+      }
+    });
+  }
+
   addRecord() {
     this.isAddingNew = true;
     
@@ -134,9 +146,15 @@ export class FormManagementComponent implements OnInit{
 
   cancelAdd() {
     this.isAddingNew = false;
+    this.newRecord = {};
+    if (!this.isEditing) {
+      this.dataSource.data.shift();
+      this.dataSource._updateChangeSubscription();
+    }
     
-    this.dataSource.data.shift();
-    this.dataSource._updateChangeSubscription();
+    
+    this.isEditing = false;
+
   }
 
   isNewlyAdded(element : any) : boolean
