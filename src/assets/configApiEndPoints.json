@@ -1,0 +1,5 @@
+{
+    "getFormManagementFieldData" : "FormManagement/GetProductList",
+    "AddProduct": "FormManagement/AddProduct",
+    "UpdateProduct": "FormManagement/UpdateProduct"
+}

@@ -109,3 +109,66 @@ input
 {
   background: transparent !important;
 }
+
+.table-header-row
+{
+  // background: linear-gradient(45deg, #25205e, #3e3982, #25205e) !important;
+  // background: linear-gradient(45deg, #4f5d73, #374151, #4f5d73) !important;
+  background: linear-gradient(45deg, #374151, #4f5d73, #374151) !important;
+  border-radius: 12px 12px 0px 0px !important;
+}
+
+tbody
+{
+  border-radius: 12px;
+  // background: linear-gradient(45deg, #2a2453, #2f3b5a, #2a2453) !important;
+  // background: linear-gradient(45deg, #2c3a4e, #1F2937, #2a384b) !important;
+  background: transparent !important;
+}
+
+thead
+{
+  border-radius: 12px 12px 0px 0px !important;
+  // background: linear-gradient(45deg, #2c3a4e, #1F2937, #2a384b) !important;
+  background: linear-gradient(45deg, #374151, #4f5d73, #374151) !important;
+}
+
+.main-div
+{
+  margin-top: 20px;
+  width: 100%;
+  justify-items: center;
+}
+
+// th
+// {
+//   background: linear-gradient(45deg, #a3a2a2, transparent);
+//   border-radius: 12px 12px 0px 0px;
+// }
+
+.mdc-data-table__cell
+{
+  border-top: 1px #7c7c83 solid !important;
+  border-bottom: none !important;
+}
+
+.mdc-data-table__cell, .mdc-data-table__header-cell {
+    border-bottom-width: 1px;
+    /* border-bottom-style: solid; */
+    border-bottom: 1px #33328c solid;
+}
+
+.mat-mdc-table
+{
+  background: linear-gradient(45deg, #1F2937, #2c3a4e, #1F2937) !important;
+}
+
+.mdc-data-table__header-row
+{
+  border-radius: 12px 12px 0px 0px !important;
+}
+
+tr
+{
+  background: transparent !important;
+}

@@ -1,5 +1,5 @@
 export class AddRecord{
-    itemName : string = '';
+    productName : string = '';
     itemQty : number = 0;
     unit : string = '';
     buyQty : number = 0;
@@ -17,12 +17,12 @@ export class AddRecord{
         buyRate: number,
         sellQty: number,
         sellRate: number,
-        itemName: string,
+        productName: string,
         unit: string,
         carryForward :number,
         creayedAt: string
     ) {
-        this.itemName = itemName;
+        this.productName = productName;
         this.itemQty = itemQty;
         this.unit = unit;
         this.buyQty = buyQty;

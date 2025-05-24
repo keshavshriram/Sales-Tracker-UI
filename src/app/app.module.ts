@@ -9,6 +9,7 @@ import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { AddRecordComponent } from './features/add-record/add-record.component';
 import { FormManagementComponent } from './features/form-management/form-management.component';
 import { AboutComponent } from './features/about/about.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutComponent } from './features/about/about.component';
     BrowserModule,
     AppRoutingModule,
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    HttpClientModule
   ],
   providers: [],
   // Removed bootstrap array as AppComponent is a standalone component
