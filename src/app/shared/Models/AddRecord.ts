@@ -1,37 +1,32 @@
 export class AddRecord{
+    action ?: string;
+    productId : number | undefined;
     productName : string = '';
-    itemQty : number = 0;
-    unit : string = '';
-    buyQty : number = 0;
-    buyRate : number = 0;
-
-    sellQty : number = 0;
-    sellRate : number = 0;
-
-    carryForward : number = 0;
-    creayedAt : string = '';
+    quantity : number = 0;
+    unitOfMeasure : string = '';
+    createdAt ?: string = '';
+    totalAmount : number = 0;
+    perProductRate : number = 0;
 
     constructor(
-        itemQty: number,
-        buyQty: number,
-        buyRate: number,
-        sellQty: number,
-        sellRate: number,
+        action : string,
+        productId : number | undefined, 
         productName: string,
-        unit: string,
-        carryForward :number,
-        creayedAt: string
+        quantity: number,
+        unitOfMeasure: string,
+        createdAt: string,
+        totalAmount: number,
+        perProductRate: number,
     ) {
+        this.action = action;
+        this.productId = productId
         this.productName = productName;
-        this.itemQty = itemQty;
-        this.unit = unit;
-        this.buyQty = buyQty;
-        this.buyRate = buyRate;
+        this.quantity = quantity;
+        this.unitOfMeasure = unitOfMeasure;
+        this.createdAt = createdAt;
+        this.totalAmount = totalAmount;
+        this.perProductRate = perProductRate;
 
-        this.sellRate = sellRate;
-        this.sellQty = sellQty;
-        this.carryForward = carryForward;
-        this.creayedAt = creayedAt;
     }
 
 }

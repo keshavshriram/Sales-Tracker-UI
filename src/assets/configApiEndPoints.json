@@ -2,5 +2,6 @@
     "getFormManagementFieldData" : "FormManagement/GetProductList",
     "AddProduct": "FormManagement/AddProduct",
     "UpdateProduct": "FormManagement/UpdateProduct",
-    "RemoveProduct" : "FormManagement/RemoveProduct"
+    "RemoveProduct" : "FormManagement/RemoveProduct",
+    "CreateOrder" : "MaterialManagement/CreateOrder"
 }
